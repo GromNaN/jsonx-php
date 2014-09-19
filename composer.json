@@ -1,0 +1,14 @@
+{
+    "name": "grom/jsonx",
+    "description": "JSONx parser for PHP",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jérôme TAMARELLE",
+            "email": "jerome@tamarelle.net"
+        }
+    ],
+    "autoload": {
+        "files": ["src/jsonx.php"]
+    }
+}
