@@ -19,6 +19,8 @@ class JsonxTest extends PHPUnit_Framework_TestCase
 </json:object>
 XML;
         $dom = new \DOMDocument();
+        $dom->preserveWhiteSpace = false;
+        $dom->formatOutput       = false;
         $dom->loadXML($xml);
 
         $this->assertEquals(json_decode('{'.$json.'}'), jsonx\parse($dom->documentElement));
@@ -82,6 +84,10 @@ XML;
   "remote": false,
   "height": 62.4,
   "ficoScore": " > 640"',
+            ),
+            array(
+                '<json:string name="html"><h1>Title</h1><p>Text &gt; &amp; &lt; Text</p>End</json:string>',
+                '"html": "<h1>Title</h1><p>Text &gt; &amp; &lt; Text</p>End"'
             ),
         );
     }

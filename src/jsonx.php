@@ -33,7 +33,10 @@ function parse(\DOMElement $node)
             }
             break;
         case 'json:string':
-            $data = (string) $node->nodeValue;
+            $data = '';
+            foreach ($node->childNodes as $childNode) {
+                $data .= html_entity_decode($node->ownerDocument->saveXML($childNode), ENT_NOQUOTES, 'UTF-8');
+            }
             break;
         case 'json:boolean':
             $data = 'true' == strtolower($node->nodeValue);
