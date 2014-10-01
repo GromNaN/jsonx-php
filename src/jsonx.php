@@ -3,7 +3,7 @@
 namespace JSONx;
 
 /**
- * Converts any JSONX formatted element into its PHP data representation.
+ * Converts any JSONx formatted element into its PHP data representation.
  *
  * @author Jérôme Tamarelle <jerome@tamarelle.net>
  *

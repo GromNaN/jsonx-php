@@ -1,0 +1,9 @@
+--TEST--
+"jsonx:string" element
+--XML--
+<?xml version="1.0" encoding="UTF-8"?>
+<json:object xsi:schemaLocation="http://www.datapower.com/schemas/json jsonx.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:json="http://www.ibm.com/xmlns/prod/2009/jsonx">
+    <json:string name="Ticker">IBM</json:string>
+</json:object>
+--JSON--
+{"Ticker" : "IBM"}

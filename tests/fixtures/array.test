@@ -1,0 +1,12 @@
+--TEST--
+"jsonx:array" element
+--XML--
+<?xml version="1.0" encoding="UTF-8"?>
+<json:object xsi:schemaLocation="http://www.datapower.com/schemas/json jsonx.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:json="http://www.ibm.com/xmlns/prod/2009/jsonx">
+    <json:array name="phoneNumbers">
+        <json:string>212 555-1111</json:string>
+        <json:string>212 555-2222</json:string>
+    </json:array>
+</json:object>
+--JSON--
+{"phoneNumbers": [ "212 555-1111", "212 555-2222" ]}
