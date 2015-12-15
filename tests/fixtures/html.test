@@ -4,9 +4,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <json:object xsi:schemaLocation="http://www.datapower.com/schemas/json jsonx.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:json="http://www.ibm.com/xmlns/prod/2009/jsonx">
     <json:html name="html">
-        <h1>Title</h1><p>Text &gt; &amp; &lt; Text</p>
+        <h1>Title</h1><p><img src="#"/>Text &gt; &amp; &lt; Text</p>
         End
     </json:html>
 </json:object>
 --JSON--
-{"html": "<h1>Title</h1><p>Text &gt; &amp; &lt; Text</p>\n        End\n    "}
+{"html": "<h1>Title</h1>\n<p><img src=\"#\">Text &gt; &amp; &lt; Text</p>\n        End\n    "}

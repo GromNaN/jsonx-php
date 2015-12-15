@@ -38,7 +38,7 @@ function parse(\DOMElement $node)
         case 'json:html':
             $data = '';
             foreach ($node->childNodes as $childNode) {
-                $data .= html_entity_decode($node->ownerDocument->saveXML($childNode), ENT_NOQUOTES, 'UTF-8');
+                $data .= $node->ownerDocument->saveHTML($childNode);
             }
             break;
         case 'json:boolean':
