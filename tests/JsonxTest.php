@@ -1,7 +1,5 @@
 <?php
 
-require __DIR__ . '/../src/jsonx.php';
-
 /**
  * @author Jérôme Tamarelle <jerome@tamarelle.net>
  */
@@ -14,10 +12,10 @@ class JsonxTest extends PHPUnit_Framework_TestCase
     {
         $dom = new \DOMDocument();
         $dom->preserveWhiteSpace = false;
-        $dom->formatOutput       = false;
+        $dom->formatOutput = false;
         $dom->loadXML($xml);
 
-        $data = jsonx\parse($dom->documentElement);
+        $data = JSONx\parse($dom->documentElement);
 
         $this->assertEquals(json_decode($json), $data, $test);
     }
