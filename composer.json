@@ -8,6 +8,9 @@
             "email": "jerome@tamarelle.net"
         }
     ],
+    "require": {
+        "php": ">= 5.3.6"
+    },
     "autoload": {
         "files": ["src/jsonx.php"]
     }
