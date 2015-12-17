@@ -3,7 +3,7 @@ JSONX for PHP
 
 JSONx is a standard to represent JSON as XML.
 
-You can the [documentation on IMB website](https://www-01.ibm.com/support/knowledgecenter/SS9H2Y_7.1.0/com.ibm.dp.doc/json_jsonx.html).
+You can read the [documentation on IMB website](https://www-01.ibm.com/support/knowledgecenter/SS9H2Y_7.1.0/com.ibm.dp.doc/json_jsonx.html).
 
 Features
 --------
