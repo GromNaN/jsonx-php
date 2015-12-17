@@ -8,12 +8,12 @@ namespace JSONx;
  * @author Jérôme Tamarelle <jerome@tamarelle.net>
  *
  * @param DOMElement
+ *
  * @return mixed
  */
 function parse(\DOMElement $node)
 {
-    switch ($node->nodeName)
-    {
+    switch ($node->nodeName) {
         case 'json:object':
             $data = new \stdClass();
             foreach ($node->childNodes as $childNode) {
@@ -46,6 +46,9 @@ function parse(\DOMElement $node)
             break;
         case 'json:number':
             $data = (float) $node->nodeValue;
+            break;
+        case 'json:time':
+            $data = strtotime($node->nodeValue);
             break;
         case 'json:null':
             $data = null;
