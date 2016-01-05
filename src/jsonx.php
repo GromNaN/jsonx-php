@@ -15,12 +15,12 @@ function parse(\DOMElement $node)
 {
     switch ($node->nodeName) {
         case 'json:object':
-            $data = new \stdClass();
+            $data = array();
             foreach ($node->childNodes as $childNode) {
                 if ($childNode instanceof \DOMElement
                     && null !== $childNode->attributes
                     && $name = $childNode->attributes->getNamedItem('name')) {
-                    $data->{$name->nodeValue} = parse($childNode);
+                    $data[$name->nodeValue] = parse($childNode);
                 }
             }
             break;
