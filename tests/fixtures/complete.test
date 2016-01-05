@@ -17,7 +17,7 @@ Combine all jsonx elements
     <json:null name="additionalInfo" />
     <json:boolean name="remote">false</json:boolean>
     <json:number name="height">62.4</json:number>
-    <json:time name="date">2015-08-29 15:07:00</json:time>
+    <json:time name="date">2015-08-29 15:07:00 UTC</json:time>
     <json:string name="ficoScore"> > 640</json:string>
     <json:html name="content"><b>Great</b></json:html>
 </json:object>
