@@ -17,7 +17,7 @@ class JsonxTest extends PHPUnit_Framework_TestCase
 
         $data = JSONx\parse($dom->documentElement);
 
-        $this->assertEquals(json_decode($json), $data, $test);
+        $this->assertEquals(json_decode($json, true), $data, $test);
     }
 
     public function getTestData()
