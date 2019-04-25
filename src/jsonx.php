@@ -51,10 +51,8 @@ function parse(\DOMElement $node)
             $data = strtotime($node->nodeValue);
             break;
         case 'json:null':
-            $data = null;
-            break;
         default:
-            return;
+            $data = null;
     }
 
     return $data;
